@@ -1,0 +1,72 @@
+.portfolio
+  //position: relative;
+  customRhythm(scale: 1, font: $fontFamily1)
+
+  &__items
+    @media screen and (min-width: $tabletMinSize)
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between;
+      padding-left: $gutter
+      padding-right: $gutter
+
+  &__item
+    customRhythm('padding-top', 1, font:$fontFamily1)
+    customRhythm('padding-bottom', 1, font:$fontFamily1)
+    padding-left: $gutter
+    padding-right: $gutter
+    background: $blackAlt
+    color: $white
+    width: 100%
+
+    &:nth-child(2n)
+      background: $black
+
+    @media screen and (min-width: $tabletMinSize)
+      width: 'calc((100% - %s) / 2)' % $gutter
+      customRhythm(scale: 1, font:$fontFamily1)
+
+      &:nth-child(2n)
+        background: $blackAlt
+
+  &__bg
+    customRhythm('height', 1, multiple: 5, base: 'lineHeight', font:$fontFamily1)
+    -webkit-filter: brightness(0.8)
+    filter: brightness(0.8)
+
+    &--hypouvery
+      background: url('/images/hypouvery.svg') no-repeat center / 14rem
+
+    &--staffino-mobile
+      background: url('/images/staffino-mobile.png') no-repeat center 40% / 4rem
+
+    &--staffino-web
+      background: url("/images/staffino-web.svg") no-repeat center 40% / 10rem
+
+    &--av
+      background: url("/images/av.png") no-repeat center / 5rem
+
+  &__title
+    font-family: $fontGroup2
+    rhythm(3, font:$fontFamily2)
+
+  &__link
+    rhythm(ignoreMargin: true, font:$fontFamily1)
+    customRhythm(multiple: .5, font:$fontFamily1)
+    position: relative;
+    display: inline-block;
+
+    &:after
+      content: '';
+      display: block;
+      position: absolute;
+      height: 1px;
+      background: currentColor;
+      bottom: 1px;
+      left: 0;
+      right: 0;
+      opacity: 0.6
+
+  &__explain
+    rhythm(ignoreMargin: true, font:$fontFamily1)
+    customRhythm(multiple: .5, font:$fontFamily1)

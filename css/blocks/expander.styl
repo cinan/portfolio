@@ -1,0 +1,9 @@
+.expander
+  customRhythm('height', 1, font:$fontFamily1)
+
+  &--1-2
+    customRhythm('height', 1, multiple: .5, font:$fontFamily1)
+
+  for x in (2..4)
+    {'&--' + x}
+      customRhythm('height', 1, multiple: x, font:$fontFamily1)

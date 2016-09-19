@@ -1,0 +1,22 @@
+.hello
+  display: flex;
+  justify-content: center;
+
+  &__button
+    font-family $fontGroup2
+    rhythm(3, ignoreLineHeight: false, font: $fontFamily2)
+    background: $blackAlt
+    customRhythm('padding-top', 3, multiple: .5, font:$fontFamily2)
+    customRhythm('padding-bottom', 3, multiple: .5, font:$fontFamily2)
+    padding-left: $gutter * 2
+    padding-right: $gutter * 2
+    color: $white
+    transition: .5s ease-in-out background;
+    width: 100%;
+    text-align: center;
+
+    &:hover
+      background: $black
+
+    @media screen and (min-width: $tabletMinSize)
+      width: auto;

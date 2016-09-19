@@ -1,0 +1,21 @@
+.hero
+  customRhythm(scale: 1, font:$fontFamily1)
+
+  &__name
+    font-family: $fontGroup2
+    rhythm(3, ignoreMargin: false, font: $fontFamily2)
+
+    @media screen and (min-width: $tabletMinSize)
+      margin-bottom: 0 !important
+
+  &__title
+    font-family: $fontGroup2
+    rhythm(2, font:$fontFamily2)
+
+  &__pic
+    display: block;
+    customRhythm('height', 1, multiple: 5, font: $fontFamily1)
+    customRhythm(scale: 1, font:$fontFamily1)
+    margin-right: $gutter
+    position: relative
+    left: -0.7rem

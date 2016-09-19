@@ -1,0 +1,10 @@
+text-overflow(args)
+  if args == 'ellipsis'
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
+  else
+    text-overflow: args
+
+transparent = rgba(255,255,255,0)
+bold = $fontWeightBold

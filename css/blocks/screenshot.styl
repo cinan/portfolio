@@ -1,0 +1,55 @@
+.screenshot
+  &__container
+    max-width: $tabletMinSize
+    margin-left: auto;
+    margin-right: auto;
+
+  &__gallery
+    display: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background $black
+    overflow auto
+
+    &--on
+      display: block
+
+  &__back
+    display: block
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba($black, .9);
+    color: $white;
+    rhythm(2, ignoreMargin: true, font:$fontFamily1)
+    letterSpacingFont1(2)
+    customRhythm('padding-top', 3, multiple: .5, font:$fontFamily1)
+    customRhythm('padding-bottom', 3, multiple: .5, font:$fontFamily1)
+    padding-left: $gutter
+    padding-right: $gutter
+
+    @media screen and (min-width: $tabletMinSize)
+      rhythm(3, ignoreMargin: true, font:$fontFamily1)
+      letterSpacingFont1(3)
+
+    &:hover
+      background: $black;
+
+  &__pics
+    container()
+    width: 100%
+    padding: $gutter 0
+    text-align: center;
+
+  &__pic
+    display: block
+    max-width: 100%
+    margin: 0 auto $gutter
+    background: $blackAlt
+
+    &:last-child
+      margin-bottom: 0

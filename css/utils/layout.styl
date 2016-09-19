@@ -1,0 +1,23 @@
+.l-no-phones
+  @media screen and (max-width: $phoneMaxSize - (1/$baseFontSize))
+    display: none !important
+
+.l-no-tablets
+  @media screen and (min-width: $tabletMinSize)
+    display: none !important
+
+//.l-no-desktops
+//  @media screen and (min-width: $tabletMaxSize)
+//    display: none !important
+//
+//.l-only-desktops
+//  display: none !important
+//
+//  @media screen and (min-width: $tabletMaxSize)
+//    display: block !important
+//
+//.l-only-tablets
+//  display: none !important;
+//
+//  @media screen and (min-width: $tabletMinSize) and (max-width: $tabletMaxSize - (1/$baseFontSize))
+//    display: block !important;

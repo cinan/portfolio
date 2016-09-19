@@ -1,0 +1,33 @@
+@import '../node_modules/reset-css/reset.css'
+@import 'utils/constants.styl'
+@import 'utils/rhythm.styl'
+@import 'utils/grid.styl'
+@import 'utils/overrides.styl'
+@import 'utils/utils.styl'
+@import 'utils/layout.styl'
+
+*, ::after, ::before
+  box-sizing: border-box
+  outline: none
+  -webkit-tap-highlight-color: transparent
+
+html, body
+  font-family $fontGroup1
+  font-size: $baseFontSize
+  font-weight: $fontWeightNormal
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  text-rendering: optimizeLegibility
+  -webkit-text-size-adjust: 100%
+  background: $white
+  color: $black
+  rhythm(ignoreMargin: true, font: $fontFamily1)
+
+img
+  image-rendering: optimizeQuality;
+
+a
+  color: $white
+  text-decoration: none
+
+@import 'blocks/*.styl'

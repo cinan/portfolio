@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "develop": "gulp",
-    "build": "gulp --production"
+    "build": "gulp --production",
+    "deploy": "rsync -rvz build images deployer@cinan.sk:/var/www/portfolio.cinan.sk"
   },
   "devDependencies": {
     "gulp": "^3.9.1",

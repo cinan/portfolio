@@ -48,6 +48,10 @@ $(function() {
             '<img src="/images/screenshots/staffino-web2.jpg" class="screenshot__pic">' +
             '<img src="/images/screenshots/staffino-web3.jpg" class="screenshot__pic">' +
             '<img src="/images/screenshots/staffino-web4.jpg" class="screenshot__pic">',
+        luigisbox:
+            '<img src="/images/screenshots/luigisbox1.jpg" class="screenshot__pic">' +
+            '<img src="/images/screenshots/luigisbox2.jpg" class="screenshot__pic">' +
+            '<img src="/images/screenshots/luigisbox3.jpg" class="screenshot__pic">'
     };
 
     $screenshotTrigger.on('click', function (e) {
